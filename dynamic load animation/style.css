@@ -1,0 +1,67 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* body */
+body{
+    background-color: #00008ccb;
+}
+
+/* wrapper */
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* wrapper loader */
+.wrapper .loader{
+    display:  flex;
+    justify-content: space-evenly;
+    padding:0 20px;
+}
+/* loader loading */
+.loader .loading{
+    width:30px;
+    height: 30px;
+    border-radius: 50px;
+    margin: 0 10px;
+    background: white;
+    /* animation */
+    animation: load 0.8s ease infinite;
+}
+
+/* animations*/
+@keyframes load{
+    0%{
+        width:30px;
+        height:30px;
+    }
+    50%{
+        width:10px;
+        height:10px;
+    }
+}
+
+/* animation one */
+.loader .loading.one{
+    animation-delay: 0.4s;
+}
+
+/* animation two */
+.loader .loading.two{
+    animation-delay: 0.5s;
+}
+
+/* animation three */
+.loader .loading.three{
+    animation-delay: 0.6s;
+}
+
+/* animation four */
+.loader .loading.four{
+    animation-delay: 0.7s;
+}
